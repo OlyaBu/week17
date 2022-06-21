@@ -13,10 +13,13 @@ let form = document.getElementById("inputname").value;
 let clean = form.trim(form);
 let inputArray = clean.split(" ");
 let LastName = inputArray[0];
-console.log(LastName)
 let Name = inputArray[1];
 let GivenName = inputArray[2];
-console.log()
+
+function ucFirst(LastName) {
+    if (!LastName) return LastName;
+    return str[0].toUpperCase() + str.slice(1);
+}
 
 function check() {
     let outputLastName = LastName[0].toUpperCase() + (LastName.slice(1)).toLowerCase();
